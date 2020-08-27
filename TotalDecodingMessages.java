@@ -32,7 +32,10 @@ public class TotalDecodingMessages {
             String s=r.readLine();
             memory=new int[n+1];
             Arrays.fill(memory, -1);
-            System.out.println(getCount(s, 0, n));
+            int ans=getCount(s, 0, n);
+            if(ans==-1)
+                ans=0;
+            System.out.println(ans);
 
         } 
     } 
